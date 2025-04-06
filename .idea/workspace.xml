@@ -61,7 +61,7 @@
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="service.entity.Main" />
       <module name="trustNetWork" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,7 +114,10 @@
       <workItem from="1743800022174" duration="10000" />
       <workItem from="1743800036284" duration="16000" />
       <workItem from="1743800114139" duration="64000" />
-      <workItem from="1743800320214" duration="5054000" />
+      <workItem from="1743800320214" duration="14018000" />
+      <workItem from="1743844027992" duration="1887000" />
+      <workItem from="1743934835352" duration="5017000" />
+      <workItem from="1743947664794" duration="4638000" />
     </task>
     <servers />
   </component>
