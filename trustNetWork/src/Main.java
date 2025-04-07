@@ -1,10 +1,10 @@
-package service.entity;
+import models.Grafo;
+import models.UsuarioEntity;
 
 import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-
         Grafo rede = new Grafo();
         Random random = new Random();
         List<UsuarioEntity> todosUsuarios = new ArrayList<>();
@@ -30,7 +30,7 @@ public class Main {
 
                 if (!destino.equals(origem) && !conectados.contains(destino)) {
                     double peso = 0.1 + (1.0 - 0.1) * random.nextDouble(); // variação de pesos
-                    peso = Math.round(peso * 10.0) / 10.0; //
+                    peso = Math.round(peso * 10.0) / 10.0;
                     rede.conectarUsuarios(origem, destino, peso);
                     conectados.add(destino);
                 }
@@ -38,23 +38,22 @@ public class Main {
         }
 
         // mostrar rede
-        System.out.println("📡 Rede de confiança gerada:\n");
+        System.out.println("Rede de confiança gerada:\n");
         rede.mostrarRede();
-
 
         // teste//
         UsuarioEntity userA = todosUsuarios.get(0);
         UsuarioEntity userB = todosUsuarios.get(5);
 
-// antes
+        // antes
         double antes = rede.calcularNivelDeConfianca(userA, userB);
         System.out.println("Confianca antes: " + antes);
 
-// add close friends
+        // add close friends
         rede.adicionarAmigoProximo(userA, userB);
         System.out.println("Adicionado como amigo próximo!");
 
-// teste | nivel de confiança depois
+        // teste | nivel de confiança depois
         double depois = rede.calcularNivelDeConfianca(userA, userB);
         System.out.println("Confianca depois: " + depois);
     }

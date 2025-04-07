@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5eb9ecf6-3834-4eb9-bf7b-f03448d5005b" name="Changes" comment="" />
+    <list default="true" id="5eb9ecf6-3834-4eb9-bf7b-f03448d5005b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trustNetWork/src/repository/leitortxt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trustNetWork/src/repository/seeds.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trustNetWork/src/service/entity/Grafo.java" beforeDir="false" afterPath="$PROJECT_DIR$/trustNetWork/src/models/Grafo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trustNetWork/src/service/entity/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/trustNetWork/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trustNetWork/src/service/entity/UsuarioEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/trustNetWork/src/models/UsuarioEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trustNetWork/src/service/facade/fachada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trustNetWork/src/service/model/GerarConexao.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,10 +42,11 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/PROJETOS/TrustNetwork",
+    "last_opened_file_path": "/home/thayson/Repositorios/TrustNetwork",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,7 +71,7 @@
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="service.entity.Main" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="trustNetWork" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,14 +90,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

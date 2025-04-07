@@ -1,10 +1,9 @@
-package service.entity;
+package models;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
 public class UsuarioEntity {
-
     private String nome;
     private Map<UsuarioEntity, Double> conexoes;
 
@@ -28,14 +27,16 @@ public class UsuarioEntity {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
+
         if (!(o instanceof UsuarioEntity)) return false;
+
         UsuarioEntity that = (UsuarioEntity) o;
-        return Objects.equals(nome, that.nome); //
+        return Objects.equals(nome, that.nome);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nome); //
+        return Objects.hash(nome);
     }
 
     @Override

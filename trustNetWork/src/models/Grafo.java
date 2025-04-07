@@ -1,10 +1,9 @@
-package service.entity;
+package models;
 import java.util.*;
 
 
 public class Grafo {
-
-    // array com a lista de usuarios e suas conexões
+    // array com a lista de usuarios e conexões
     private List<UsuarioEntity> usuarios;
 
     // inicia o grafo
@@ -34,7 +33,7 @@ public class Grafo {
         }
     }
 
-    // codigo que encontre para calcular o nivel de confiança entre dois usuarios ( inverti o codigo pq djsktra trabalha com menor caminho ( peso ) e aq queremos o maior
+    // codigo para calcular o nivel de confiança entre dois usuarios ( inverti o codigo pq djsktra trabalha com menor caminho ( peso ) e aq queremos o maior
     public double calcularNivelDeConfianca(UsuarioEntity origem, UsuarioEntity destino) {
         Map<UsuarioEntity, Double> confianca = new HashMap<>();
         PriorityQueue<UsuarioEntity> fila = new PriorityQueue<>(Comparator.comparingDouble(confianca::get).reversed());
@@ -84,12 +83,10 @@ public class Grafo {
         origem.adicionarConexao(destino, novoPeso);
     }
 
-    // aemover amizade (ou reduzir peso)
+    // remover amizade (ou reduzir peso)
     public void removerAmigo(UsuarioEntity origem, UsuarioEntity destino) {
         origem.getConexoes().remove(destino);
     }
-
-
 }
 
 
