@@ -1,0 +1,24 @@
+package grafo;
+
+public class Aresta {
+    private String destino;
+    private double peso;
+
+    public Aresta(String destino, double peso) {
+        this.destino = destino;
+        this.peso = peso;
+    }
+
+    public String getDestino() {
+        return destino;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    @Override
+    public String toString() {
+        return "(" + destino + ", " + String.format("%.2f", peso) + ")";
+    }
+}
